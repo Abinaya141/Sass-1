@@ -1,0 +1,14 @@
+// _maps.scss
+$accessory-map: (
+  necklace: #efb2f1,
+  bracelet: #2ccbe7,
+  watch: #61fabf,
+);
+
+@each $item, $color in $accessory-map {
+  .#{$item}-card {
+    background-color: $color;
+    padding: $padding;
+    border-radius: $border-radius;
+  }
+}

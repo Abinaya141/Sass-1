@@ -1,0 +1,24 @@
+{
+  "name": "sass-1",
+  "version": "1.0.0",
+  "description": "Node & Sass",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch sass/main.scss:css/main.css"
+  },
+  "keywords": [
+    "JS",
+    "NODE",
+    "SASS",
+    "NPM"
+  ],
+  "author": "Abinaya s",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^9.0.0"
+  },
+  "dependencies": {
+    "sass": "^1.79.3"
+  }
+}

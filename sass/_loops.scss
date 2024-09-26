@@ -1,0 +1,19 @@
+// _loops.scss
+$accessory-types: necklace, bracelet, watch;
+
+@each $type in $accessory-types {
+  .#{$type}-card {
+    width: $image-width;
+    height: auto;
+    margin-bottom: 20px;
+    background-color: lighten($primary-color, 15%);
+  }
+}
+
+@for $i from 1 through 3 {
+  .card-#{$i} {
+    width: 200px * $i;
+    height: 200px;
+    background-color: lighten($secondary-color, $i * 5%);
+  }
+}
